@@ -1,0 +1,126 @@
+body{
+	background-image : url(images/background.png);
+	background-size : 100%;
+	text-align : center;
+	font-family : Arial;
+}
+
+h1{
+	color : #FF0000;
+	text-shadow : 2px 2px 4px #000000;
+}
+
+input[value="Tableau de bord"]{
+	border-width : 4px 1px 1px 4px;
+	border-color : #00FF00;
+	background-color : #FFFF99;
+	color : #808080;
+	font-weight : bold;
+	margin : 5px;
+	font-size : 110%;
+}
+
+input[value="Lumière"],input[value="Température"]{
+	border-width : 4px 1px 1px 4px;
+	margin : 5px;
+	font-size : 110%;
+}
+
+#menu{
+	display : flex;
+	justify-content : center;
+}
+
+fieldset{
+	background-color : #FFFACD;
+	opacity : 80%;
+	padding : 0px;
+	text-align : left;
+	margin  : 10px 50px 0px 50px;
+	font-weight : bold;
+}
+
+legend{
+	color : #228B22;
+	font-size : 20px;
+	margin-left : 10px;
+}
+
+section{
+	display : flex;
+	justify-content : space-around;
+}
+
+#tab_temp{
+	background-color : #228B22;
+	text-align : center;
+}
+
+#tab_temp .corp{
+	background-color : #90EE90;
+	text-align : left;
+}
+
+#tab_lum{
+	background-color : #FF0000;
+	text-align : center;
+}
+
+#tab_lum .corp{
+	background-color : #FFCCCB;
+	text-align : left;
+}
+
+.en_tete{
+	color : white;
+	height : 40px;
+}
+
+table{
+	border-radius : 30px;
+	border-collapse : collapse;
+	width : 48%;
+	margin-top : 30px;
+	margin-bottom : 30px;
+}
+
+.value{
+	width : 40%;
+}
+
+.gris{
+	background-color : #808080;
+}
+
+.rouge{
+	background-color : #FF0000;
+	text-align : center;
+}
+
+td{
+	padding : 15px;
+}
+
+img{
+	height : 100px;
+}
+
+td[rowspan="3"]{
+	width : 30%;
+}
+
+.corp img{
+	box-shadow : 5px 5px 5px #808080; 
+	height : 10%;
+	width : 90%;
+}
+
+a[href="https://yncrea.fr/"]{
+	display: flex;
+	justify-content: right;
+	margin : 10px;
+}
+
+img[alt="Logo ISEN"]{
+	width : 200px;
+}

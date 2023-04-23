@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="temperature.css" />
+        <title>temperature</title>
+	</head> 
+	
+	<body>
+	
+		<h1>Menu principal</h1>
+		<div id="menu">
+		<form action="temperature.html"><input type="submit" value="Température"></form>
+		<form action="lumiere.html"><input type="submit" value="Lumière"></form>
+		<form action="tableau_de_bord.php"><input type="submit" value="Tableau de bord"></form>
+		</div>
+		
+	<form method="get" action="cgi/config.cgi"><fieldset>
+	<legend>Température</legend>
+	<section>
+	<h2>Gestion de la température</h2>
+	
+	<table>
+		<tr><td colspan="5" class="ligne"></td></tr>
+		<tr>
+			<td class="name">Choix du capteur</td>
+			<td> : </td>
+			<td>
+			<select name="choix_capteur">
+				<option value="temp1">temp1</option>
+				<option value="temp2">temp2</option>
+				<option value="temp3">temp3</option>
+			</select>
+			</td>
+			<td></td>
+			<td rowspan="5"><img alt="termomètre gif" src="images/temp_gif.gif" id="image_term"/></td>
+		</tr>
+		<tr>
+			<td class="name">Valeurs (Min et Max)</td>
+			<td> : </td>
+			<td><input type="text" name="val_min" placeholder="min" required /></td>
+			<td><input type="text" name="val_max" placeholder="max" required /></td>
+		</tr>
+		<tr>
+			<td class="name">Unité</td>
+			<td> : </td>
+			<td><div><input type="radio" name="unite" value="celsius" checked />°C</div></td>
+			<td><div><input type="radio" name="unite" value="fahrenheit" />°F</div></td>
+		</tr>
+		<tr>
+			<td class="name">Activation</td>
+			<td> : </td>
+			<td><input type="checkbox" name="on_off" checked />ON</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name">Mot de passe <em>*</em></td>
+			<td> : </td>
+			<td><input type="password" pattern="\d*" name="password" placeholder="mdp" maxlength="4" required /></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name">Envoyer les données</td>
+			<td> : </td>
+			<td colspan="3"><input type="submit" value="Soumettre"></td>
+		</tr>
+		<tr>
+			<td class="name">Effacer les données</td>
+			<td> : </td>
+			<td colspan="3"><input type="reset" value="Réinitialiser"></td>
+		</tr>
+		<tr><td colspan="5"  class="ligne"></td></tr>
+		<tr><td colspan="5"><p id="consignes">* : 4 chiffres numériques au maximum</p></td></tr>
+	</table>
+	
+	</section>
+	<a href="https://yncrea.fr/">© Yncréa Ouest (29200)</a>
+	</fieldset></form>
+	<a href="https://www.isen.fr/"><img alt="Logo ISEN" src="images/logo_isen.jpg"/></a>
+	</body>
+</html>
+
+<!-- -->
+	
+	
